@@ -1,0 +1,64 @@
+//importing scanner class to take the input from the user
+import java.util.Scanner;
+public class Fibonic
+
+{
+	public static <nextLine>void main(String[] args) 
+	{
+		//creating new object of scanner class
+		Scanner sc=new Scanner(System.in);
+		//taking the number of string that is taken
+		System.out.println(" enter the number of string");
+		
+		int length=sc.nextInt();
+		//entering the strings
+		System.out.println(" the strings are");
+		String[] str=new String[3];
+
+		for(int i=0;i<str.length;i++)
+		{
+			str[i]=sc.next();
+			//taking a method as toDisplay
+			toDisplay(str[i]);
+			
+
+		}
+		
+
+	}
+	//passing the string that taken from the user to the method
+	public static void toDisplay(String str)
+	{
+		//converting string to the charecter
+		char[] ch=str.toCharArray();
+		//initilising count to count the charecter in the string
+		int count=0;
+		//taking the string
+		for(int i=0;i<ch.length;i++)
+		{
+			//j=i+1 contiues unless it reaches length value
+			for(int j=i+1;j<ch.length;j++)
+			{
+				//ch[0]=a && ch[j](nothing but ch[i+1] that is ch[1])
+				//comparing index 0 and 1..if it matches
+				if(ch[0]==ch[j])
+				{
+					//increment the count
+					count++;
+					//increment i 
+					i++;
+				}
+			}
+		}
+		//if the count is greater or eqal to 3 print dynamic else not
+
+		if(count>=3)
+		{
+			System.out.println(" dynamic");
+		}
+		else
+		{
+			System.out.println("not");
+		}
+	}
+}

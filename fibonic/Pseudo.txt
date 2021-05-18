@@ -1,0 +1,25 @@
+Pseudo code
+
+
+PROGRAM Fibonnic
+
+step1: take input from the user
+step2: pass as the argument to the method
+step3: covert into array
+step4: initialize i,j
+step5: i=ch[0] & j=ch[1] compare and add the length
+step6: increment the count
+step6: if(j=i+1==ch.length)
+{
+	
+		if(count>=3)
+		{
+			System.out.println(" dynamic");
+		}
+		else
+		{
+			System.out.println("not");
+		}
+}
+     
+    
